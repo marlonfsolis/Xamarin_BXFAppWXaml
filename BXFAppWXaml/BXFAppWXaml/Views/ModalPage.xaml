@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BXFAppWXaml.Views.ModalPage"
+             Title="Modal page">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="This is a page on Modal mode. Note there is no back button at the top of the page."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                Margin="5" />
+
+            <Button Text="GO TO MENU"
+                    BackgroundColor="CadetBlue"
+                    Margin="10"
+                    x:Name="GotoMenuPage"
+                    Clicked="GotoMenuPage_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
