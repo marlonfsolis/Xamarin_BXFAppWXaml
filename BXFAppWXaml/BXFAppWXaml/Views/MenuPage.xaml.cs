@@ -25,5 +25,10 @@ namespace BXFAppWXaml.Views
         {
             Navigation.PushModalAsync(new ModalPage());
         }
+
+        private void StackLayoutPageBtn_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new StackLayoutPage());
+        }
     }
 }

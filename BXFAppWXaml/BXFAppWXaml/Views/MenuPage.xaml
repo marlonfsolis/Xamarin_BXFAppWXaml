@@ -4,14 +4,20 @@
              x:Class="BXFAppWXaml.Views.MenuPage"
              Title="Menu">
     <ContentPage.Content>
-        <StackLayout>
-            <Button Text="GO TO ABOUT TAB"
-                Margin="5"
-                Command="{Binding GotoAboutCommand}"></Button>            
-            <Button Text="GO TO MODAL PAGE"
-                Margin="5"
-                x:Name="ModalPageBtn"
-                Clicked="ModalPageBtn_Clicked"></Button>
-        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <Button Text="GO TO ABOUT TAB"
+                    Margin="5"
+                    Command="{Binding GotoAboutCommand}"></Button>
+                <Button Text="GO TO MODAL PAGE"
+                    Margin="5"
+                    x:Name="ModalPageBtn"
+                    Clicked="ModalPageBtn_Clicked"></Button>
+                <Button Text="GO TO STACK LAYOUT PAGE"
+                    Margin="5"
+                    x:Name="StackLayoutPageBtn"
+                    Clicked="StackLayoutPageBtn_Clicked"></Button>                
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
