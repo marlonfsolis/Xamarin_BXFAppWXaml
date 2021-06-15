@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BXFAppWXaml.Views.LoginPage">
+    <ContentPage.Content>
+        <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
+            <Label Text="This page is part of the TabBar section on AppShell. Here you won't have the menu at the top."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Any page on this TabBar section will be like this (without Menu Icon)."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />            
+
+            <Button VerticalOptions="Center" Text="Login"
+                    Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

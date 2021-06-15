@@ -10,11 +10,11 @@
                 HorizontalOptions="CenterAndExpand"
                 Margin="5" />
 
-            <Button Text="GO TO MENU"
+            <Button Text="GO TO ABOUT"
                     BackgroundColor="CadetBlue"
                     Margin="10"
-                    x:Name="GotoMenuPage"
-                    Clicked="GotoMenuPage_Clicked"></Button>
+                    x:Name="GotoAboutPage"
+                    Clicked="GotoAboutPage_Clicked"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

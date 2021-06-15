@@ -10,16 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace BXFAppWXaml.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ModalPage : ContentPage
+    public partial class LoginPage : ContentPage
     {
-        public ModalPage()
+        public LoginPage()
         {
             InitializeComponent();
         }
 
-        private async void GotoAboutPage_Clicked(object sender, EventArgs e)
+        private async void Button_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync($"////{nameof(AboutPage)}");
+            await Shell.Current.GoToAsync("//AboutPage");
         }
     }
 }

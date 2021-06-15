@@ -1,4 +1,5 @@
 ﻿using BXFAppWXaml.Views;
+using System;
 using Xamarin.Forms;
 
 namespace BXFAppWXaml
@@ -9,7 +10,20 @@ namespace BXFAppWXaml
         {
             InitializeComponent();
             Routing.RegisterRoute(nameof(ModalPage), typeof(ModalPage));
-            //Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
+        }
+
+        private async void OnMenuItemClicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("//LoginPage");
+        }
+        private async void OnModalItemClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new ModalPage());
+
+            /* Set FlyoutIsPresented to false to hide programmatically the Flyout page.
+             * When using Navigation the Flyout stay open and need to close manually.
+             */
+            Shell.Current.FlyoutIsPresented = false;
         }
 
     }
